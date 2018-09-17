@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+	<link href="style.css" rel="stylesheet">
+	<link href="mobile.css" rel="stylesheet">
+	<title>Damian Tkaczyk - portfolio</title>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div id="loading_wrap">
+<img class="wrapper" src="img/loading.png">
+<p>Loading...</p>
+</div>
+
+<div id="bg_img">
+</div>
+
+<nav class="topnav" id="myNav">
+  <a href="javascript:scroll_to_Top();">Home</a>
+  <a href="#about">O mnie</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Kontakt</a>
+  <a href="javascript:void(0);" class="icon" onclick="myMenu()">
+    <i class="fas fa-align-justify"></i>
+  </a>
+</nav>
+
+<div id="slideshow" class="pages">
+	<h1 style="color: #ffffff" id="hello">Witaj<span class="migotanie">.</span></h1>
+</div>
+
+<div id="about" class="pages">
+		<h1 class="pages_h1">O mnie:</h1>
+		<figure>
+			<img src="http://humanorigins.si.edu/sites/default/files/styles/full_width/public/images/square/erectus_JC_Recon_Head_CC_f_sq.jpg">
+		</figure>
+		<p style="margin: 30px; font-size: 2em;">
+		Homo erectus (człowiek wyprostowany) syn. pitekantrop (Pithecanthropus erectus) – prymitywny, kopalny gatunek człowieka z epoki środkowego plejstocenu, stanowiący szczebel ewolucyjny pośredni między australopitekami a formami człowieka.
+
+Kolebką Homo erectus jest środkowo-wschodnia Afryka (Etiopia, Kenia, Tanzania), gdzie pojawił się prawdopodobnie na przełomie pliocenu i plejstocenu, około 1,8 miliona lat temu i szybko rozprzestrzenił na tereny zachodniej i wschodniej Azji[1]. Afrykański przedstawiciel tego gatunku określany jest także jako Homo ergaster[2]. Homo erectus jako pierwszy opanował sztukę posługiwania się ogniem.
+		</p>
+		
+		<p style="margin: 30px; font-size: 2em;">
+		Na szerokości geograficznej środkowej Polski odkryto szczątki kostne Homo erectus w Niemczech, na obszarze Turyngii, w miejscowości Bilzingsleben[7]. Skamieliny pitekantropa odkryto także w Vértesszőlős na Węgrzech (na północny zachód od Budapesztu). Najstarszym dobrze udokumentowanym obozowiskiem Homo erectus w najbliższym sąsiedztwie ziem polskich jest stanowisko Korolewo na Zakarpaciu, którego wiek datowany jest na ponad 800 tys. lat
+		</p>
+</div>
+
+<div id="portfolio" class="pages">
+	<h1 class="pages_h1">Portfolio:</h1>
+</div>
+
+<div id="contact" class="pages">
+
+	<h1 class="pages_h1">Kontakt:</h1>
+	<aside id="aside_left" class="asides">
+		<h2 class="aside_h2">Napisz maila:</h2>
+		<form action="mailto:damian.tkaczyk92@gmail.com" method="post" enctype="text/plain">
+			<input type="text" name="nick" placeholder="Nick/Imię">
+			<input type="text" name="email" placeholder="Twoj e-mail">
+			<textarea placeholder="Treść Maila..."></textarea>
+			<input type="submit" value="Wyślij">
+		</form>
+	</aside>
+	
+	<aside id="aside_right" class="asides">
+		<h2 class="aside_h2">Social media:</h2>
+		<p>Facebook: &emsp;<a href="https://www.facebook.com/kapik.t" target="_blank"><img src="img/social_fb.jpg"></a></p>
+		<p>Twitter: &emsp;<a href="www.twitter.com" target="_blank"><img src="img/social_tw.jpg"></a></p>
+		<p>LinkedIN: &emsp;<a href="https://www.linkedin.com/in/damiantkaczyk92" target="_blank"><img src="img/social_in.jpg"></a></p>
+	</aside>
+	
+</div>
+
+<footer>
+	© Copyright 2018 Damian Tkaczyk, All Rights Reserved
+</footer>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="smooth_scrolling.js"></script>
+<script src="main.js"></script>
+<script>
+		$(document).ready(function(){
+		$('#loading_wrap').remove();
+		});
+</script>
+</body>
